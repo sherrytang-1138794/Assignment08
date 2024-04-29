@@ -84,4 +84,5 @@ class EditBookmarkCommand(Command):
     def execute(self, data: DomainBookmark):
         bookmark = Bookmark.update_from_domain(data)
         with transaction.atomic():
-            bookmark.save()
+            # bookmark.save()
+            pass
